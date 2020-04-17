@@ -1,23 +1,82 @@
-nav {
-    text-align: center;
-}
 
-nav img {
-    width: 10px;
-}
 
 /* #### Mobile Phones Portrait #### */
 @media screen and (max-device-width: 480px) and (orientation: portrait){
+  /* ----- NAV BAR ----- */
+  .text-white {
+    list-style: none;
+  }
 
+  .text-white li {
+    padding: 0.1em 0;
+  }
   
+  .nav-item {
+    color: rgb(200, 200, 255);
+  }
+
+  /* ----- VIDEO ----- */
+  .video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+  }
+
+  .video-container iframe, .video-container object, .video-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+
+  /* ----- MAIN ----- */
+  body {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  main {
+    background-image: url(https://images.pexels.com/photos/2276928/pexels-photo-2276928.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    padding-bottom: 2.5rem;
+    height: 100vh;
+  }
+  
+  h5 {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em 1em;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 9rem
+  }
+  
+  footer p {
+    background-color: rgb(200, 200, 200, 0.4);
+    padding: 0.3em 1em;
+    margin: 0.5em;
+    text-align: justify;
+  }
+  
+}
+
 /* #### Mobile Phones Landscape #### */
-@media screen and (max-device-width: 640px) and (orientation: landscape{
-  /* some CSS here */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  
+  
 }
 
 /* #### Mobile Phones Portrait or Landscape #### */
 @media screen and (max-device-width: 640px){
+    
 
+}
 
 /* #### iPhone 4+ Portrait or Landscape #### */
 @media screen and (min-device-width: 320px) and(-webkit-min-device-pixel-ratio: 2){
@@ -41,5 +100,8 @@ nav img {
 
 /* #### Desktops #### */
 @media screen and (min-width: 1024px){
-  /* some CSS here */
+  /* iframe {
+    width: 560px;
+    height: 315px;
+  } */
 }
