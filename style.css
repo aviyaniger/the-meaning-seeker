@@ -1,5 +1,6 @@
 body{
   height: 100%;
+  line-height: 1.5rem;
   background-image: url(https://images.pexels.com/photos/207247/pexels-photo-207247.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
   background-size: cover;
   padding: 0;
@@ -7,51 +8,88 @@ body{
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
+  color: rgb(0, 0, 0, .8);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+h1, h2, h3, h4, h5, h6, a {
+  color: rgb(0, 0, 0, .9);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 nav {
   height: 6vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  padding: .7em 0;
+  width: 14%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0, .9);
+  background-image: linear-gradient(to bottom, rgb(204, 193, 75), rgb(204, 193, 75, 0));
+}
+
+nav a:hover {
+  color: rgba(70, 45, 45, 0.9);
+  background-image: linear-gradient(to bottom, rgb(174, 163, 45), rgb(204, 193, 75, 0));
 }
 
 .hero-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   justify-content: center;
-  background-color: mediumblue;
   height: 100%;
+  position: relative;
 }
 
 
 .article-piece {
-  background-color: lawngreen;
   width: 70%;
-  padding: 0 0 .3rem 0;
+  padding: 0 0 1.3rem 0;
   margin: 0;
 }
 
 
 .article-container {
-  padding: 1em;
-  background-color: maroon;
+  padding: 0 1em;
+  width: 50%;
+  position: absolute;
+  left: 50vw;
+  top: 20vh;
+}
+
+
+button {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: rgb(204, 193, 75);
+  color: rgb(0, 0, 0, .8);
+}
+
+button:hover {
+  background-color: rgb(184, 173, 55);
+  color: rgb(0, 0, 0, .8);
+  cursor: pointer;
 }
 
 .video-container {
-  background-color: lightcoral;
   height: 100%;
+  width: 100%;
   padding: 0;
+  margin: 0;
   position: relative;
+  
 }
 
 .video-container iframe {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 20vh;
+  right: 50vw;
+  border: .3rem solid rgb(0, 0, 0, .1);
 }
 
 main {
@@ -61,6 +99,18 @@ main {
 }
 
 footer {
-  background-color: mediumvioletred;
+  background-color: rgb(255, 247, 175, .3);
   height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+footer div {
+  font-size: small;
+  padding: 1rem;
+  line-height: 1rem;
+}
+
+.left-side {
+  text-align: right;
 }
